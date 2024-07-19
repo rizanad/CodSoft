@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 150px;
+    /* position: sticky;
+    top: 0; */
+    /* background-color: rgb(244, 196, 160); */
+}
+.navbar h2{
+    /* margin-top: -5px; */
+    margin-top: -14px;
+    padding-bottom: 10px;
+}
+
+
+ul {
+    display: flex;
+    gap: 85px;
+    margin-top: -7px;
+}
+ul li{
+    list-style: none;
+    font-weight: bold;
+    /* border: 2px solid red; */
+}
+
+ul li:hover{
+    color: red;
+    transition: 0.3s;
+    /* border: 2px solid red; */
+    cursor:pointer;
+}
+
+.about{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    /* background-color: rgb(209, 206, 202); */
+    background-color: aliceblue;
+
+    margin-top: -20px;
+    height: 640px;
+}
+
+.info{
+    width: 40%;
+    margin: 90px;
+    margin-top: 125px;
+}
+.info h3{
+    color: blue;
+    font-size: 27px;
+    margin-bottom: 25px;
+}
+
+.info h1{
+    font-size: 59px;
+}
+.info p{
+    margin-top: 20px;
+}
+.image{
+    margin-top: 115px;
+}
+
+.image img {
+   width: 700px;
+}
+
+.btn{
+    padding: 17px 27px;
+    margin-top: 30px;
+    background-color: tomato;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    box-shadow: 2px 8px 15px 2px rgba(10, 20, 64, 0.5);
+}
+.btn:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+    /* font-size: 18px; */
+}
+
+@media (max-width:1200px){
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        gap: 100px;
+    }
+}
+
+@media (max-width:800px){
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        font-size: 30px;
+        justify-content: flex-start;
+    }
+    .navbar h2{
+        margin-left: 400px ;
+    }
+    
+    .navbar ul li{
+        margin-top: 20px;   
+    }
+}
+
+@media (max-width:500px){
+    .navbar ul li{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.about-us{
+    margin-top: 60px;
+    /* background-color: cornsilk; */
+}
+.about-us h1{
+    /* margin-left: 100px; */
+    text-align: center;
+    font-size: 40px;
+    color: blue;
+}
+
+.two{
+    display: flex;
+    /* gap: -50px; */
+}
+
+.paragraph button{
+    /* width: 200px; */
+    margin-left: 250px;
+    margin-top: 22px;
+    padding: 17px;
+    background-color: tomato;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    box-shadow: 2px 8px 15px 2px rgba(10, 20, 64, 0.5);
+}
+.paragraph button:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.paragraph p{
+    width: 70%;
+    margin-left: 250px;
+    margin-top: 150px;
+}
+.img-shoe img {
+    width: 600px;
+    margin-left: 50px;
+}
+
+.all-product{
+    height: 700px;
+    background-color: rgb(222, 238, 252);
+}
+.all-product h1{
+    text-align: center;
+    padding-top: 60px;
+    color: blue;
+}
+
+.products{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 80px;
+   
+}
+
+.pr-1{
+    border: 1px solid black;
+    width: 18%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 420px;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    margin-top: 80px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+
+
+}
+.small{
+    font-size: 14px;
+}
+.big{
+    font-weight: bolder;
+}
+
+.pr-1 img{
+    width: 150px;
+}
+
+.pr-1:hover{
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+.checked {
+    color: orange;
+  }
+
+.pr-1  button{
+    padding: 10px 30px;
+    background-color: transparent;
+    border: 2px solid blue;
+    border-radius: 40px;
+    font-weight: bolder;
+
+}
+.pr-1 button:hover{
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
